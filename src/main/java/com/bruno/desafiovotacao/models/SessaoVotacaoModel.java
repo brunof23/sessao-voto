@@ -14,9 +14,6 @@ public class SessaoVotacaoModel {
 
     private LocalDateTime inicio;
     private LocalDateTime fim;
-    // outros atributos e métodos getters/setters
-
-    // Construtores, getters e setters
     public SessaoVotacaoModel() {
     }
 

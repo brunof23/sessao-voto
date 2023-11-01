@@ -11,8 +11,8 @@ public class VotoModel {
     private PautaModel pauta;
 
 
+    private boolean voto; // 'true' para 'Sim', 'false' para 'Não'
 
-    private boolean voto; // 'sim' para 'Sim', 'nao' para 'Não'
 
     public VotoModel() {
     }
