@@ -10,20 +10,11 @@ public class VotoModel {
     @ManyToOne
     private PautaModel pauta;
 
-    @ManyToOne
-    private AssociadoModel associado;
 
-    private boolean voto; // 'true' para 'Sim', 'false' para 'Não'
-    // outros atributos e métodos getters/setters
 
-    // Construtores, getters e setters
+    private boolean voto; // 'sim' para 'Sim', 'nao' para 'Não'
+
     public VotoModel() {
-    }
-
-    public VotoModel(PautaModel pauta, AssociadoModel associado, boolean voto) {
-        this.pauta = pauta;
-        this.associado = associado;
-        this.voto = voto;
     }
 
     public Long getId() {
@@ -40,14 +31,6 @@ public class VotoModel {
 
     public void setPauta(PautaModel pauta) {
         this.pauta = pauta;
-    }
-
-    public AssociadoModel getAssociado() {
-        return associado;
-    }
-
-    public void setAssociado(AssociadoModel associado) {
-        this.associado = associado;
     }
 
     public boolean isVoto() {

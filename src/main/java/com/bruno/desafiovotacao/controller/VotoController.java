@@ -14,8 +14,7 @@ public class VotoController {
 
     @PostMapping
     public VotoModel votar(@RequestParam Long pautaId,
-                           @RequestParam Long associadoId,
                            @RequestParam boolean voto) {
-        return votoService.votar(pautaId, associadoId, voto);
+        return votoService.votar(pautaId, voto);
     }
 }
