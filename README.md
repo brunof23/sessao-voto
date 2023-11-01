@@ -9,6 +9,8 @@ Rodar o comando na pasta do projeto - mvn clean install
 
 Startar a API apertando o Play
 
+Aplicacao Usando Banco em Memoria H2
+
 
 Teste dos Endpoints: 
 
