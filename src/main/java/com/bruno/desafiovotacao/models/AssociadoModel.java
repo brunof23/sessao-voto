@@ -10,9 +10,7 @@ public class AssociadoModel {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
 
-    // outros atributos e métodos getters/setters
-
-    // Construtores, getters e setters
+    private String nome;
     public AssociadoModel() {
     }
 
@@ -26,5 +24,13 @@ public class AssociadoModel {
 
     public void setId(Long id) {
         this.id = id;
+    }
+
+    public String getNome() {
+        return nome;
+    }
+
+    public void setNome(String nome) {
+        this.nome = nome;
     }
 }

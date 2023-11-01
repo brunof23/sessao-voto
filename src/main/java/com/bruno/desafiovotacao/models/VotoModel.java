@@ -13,10 +13,8 @@ public class VotoModel {
     @ManyToOne
     private AssociadoModel associado;
 
-    private boolean voto; // 'true' para 'Sim', 'false' para 'Não'
-    // outros atributos e métodos getters/setters
+    private boolean voto; // 'sim' para 'Sim', 'sim' para 'Não'
 
-    // Construtores, getters e setters
     public VotoModel() {
     }
 
