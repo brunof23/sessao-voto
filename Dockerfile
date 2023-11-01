@@ -5,6 +5,7 @@ RUN apt-get install openjdk-17-jdk -y
 COPY src .
 
 RUN apt-get install maven -y
+
 RUN mvn clean install
 
 FROM openjdk:17-jdk-slim
@@ -14,3 +15,9 @@ EXPOSE 8080
 COPY --from=build /target/desafio-votacao-0.0.1-SNAPSHOT.jar app.jar
 
 ENTRYPOINT [ "java", "-jar", "app.jar" ]
+
+
+FROM maven:3.6.3-openjdk-11
+WORKDIR /app
+COPY . .
+RUN mvn clean install
